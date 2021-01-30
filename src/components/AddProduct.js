@@ -17,13 +17,7 @@ const initState = {
   description: ""
 };
 
-{/*
-  name: "",
-  price: "",
-  stock: "",
-  shortDesc: "",
-  description: ""
-*/};
+
 
 class AddProduct extends Component {
   constructor(props) {
@@ -95,6 +89,40 @@ class AddProduct extends Component {
                   type="text"
                   name="name"
                   value={name}
+                  onChange={this.handleChange}
+                  required
+                />
+                </div>
+                <div className="field">
+                <label className="media">Product image: </label>
+                <input
+                  className="media"
+                  type="image"
+                  alt="text"
+                  name="image"
+                  value={image}
+                  onChange={this.handleChange}
+                  required
+                />
+                </div>
+                <div className="field">
+                <label className="label">Product category: </label>
+                <input
+                  className="input"
+                  type="text"
+                  name="category"
+                  value={category}
+                  onChange={this.handleChange}
+                  required
+                />
+                </div>
+                <div className="field">
+                <label className="label">Brand: </label>
+                <input
+                  className="input"
+                  type="text"
+                  name="brand"
+                  value={brand}
                   onChange={this.handleChange}
                   required
                 />

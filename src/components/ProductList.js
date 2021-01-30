@@ -39,8 +39,8 @@ const ProductList= props =>{
               )}
             </div>
           </div>
-          <footer class="footer">
-            <div class="container has-text-centered has-text-grey-light" style={{marginBottom:0}}>
+          <footer class=" hero is-small is-light">
+            <div class="hero-body container has-text-centered has-text-grey-light" style={{marginBottom:0}}>
                <p>
                Copyright ⓒ {new Date().getFullYear()} 
                 </p>

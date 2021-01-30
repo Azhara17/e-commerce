@@ -19,6 +19,9 @@ const ProductItem = props => {
               <b style={{ textTransform: "capitalize"}}>
                 {product.name}{" "}  
               </b>
+              <div>
+                {product.brand}{" "}
+              </div>
               <div>{product.description}</div>
               {product.countInStock > 0 ? (
                 <small>{" Available"}</small>
