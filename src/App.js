@@ -111,7 +111,7 @@ checkout = () => {
       p.stock = p.stock - cart[p.name].amount;
 
       axios.put(
-        `http://localhost:3001/products/${p.id}`,
+        `http://localhost:3001/products/${p._id}`,
         { ...p },
       )
     }
